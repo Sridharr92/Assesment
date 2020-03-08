@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-// import results from './api.randomuser.me.js'
 
 class Card extends Component{
 	 constructor(props) {
