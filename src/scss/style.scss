@@ -1,5 +1,45 @@
+//variable
+
+$mob-width: 50%;
+$des-width:33.333333%;
+$big-width:25%;
+$mob-flex:0 0 50%;
+$des-flex:0 0 33.333333%;
+$big-flex:0 0 25%;
+
 body{
 	background-color: #cccccc;
+}
+.card-wrapper{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+@media only screen and (min-width: 450px) and (max-width: 699px) {
+    .card-wrapper{
+		flex:$mob-flex;
+		max-width: $mob-width;
+	}
+}
+
+ @media only screen and (min-width:700px) and (max-width: 990px)  {
+    .card-wrapper{
+    	flex:$mob-flex;
+		max-width: $mob-width;		
+	}
+}
+@media only screen and (min-width:991px) and (max-width: 1023px)  {
+    .card-wrapper{
+		flex:$des-flex;
+		max-width: $des-width;
+	}
+}
+
+@media only screen and(min-width:1024px) {
+    .card-wrapper{
+		flex:$des-flex;
+		max-width: $big-width;
+	}
 }
 .card{
 	margin: 20px;

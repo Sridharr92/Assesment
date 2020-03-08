@@ -8,7 +8,7 @@ class Card extends Component{
 	    }
 	  }
 	  componentDidMount() {
-	    fetch('https://api.randomuser.me?results=24')
+	    fetch('https://randomuser.me/api/?gender=male&results=24')
 	      .then(res => {return res.json();})
 	      .then(json => {
 	        this.setState({
@@ -23,7 +23,7 @@ class Card extends Component{
 	      	<div className="container-fluid">
 	      		<div className="row">
 	      		{results && results.map(result => ( 
-		          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 d-flex px-0">	          
+		          <div className="card-wrapper">	          
 		            <div className="card">
 		              <div className="card-body">
 		                  <img className="card-body-img" src={result.picture.large}  alt="Card image" />
