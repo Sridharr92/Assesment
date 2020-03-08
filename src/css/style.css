@@ -1,0 +1,24 @@
+body {
+  background-color: #cccccc; }
+
+.card {
+  margin: 20px;
+  text-align: center; }
+  .card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 0; }
+  .card-body-img {
+    border-radius: 50%; }
+  .card-body-title {
+    font-size: 28px; }
+  .card-body-btn {
+    padding: 5px 80px;
+    background-color: #e26d00;
+    border: 1px solid #e26d00;
+    white-space: nowrap; }
+    .card-body-btn:hover {
+      background-color: #fff;
+      border: 1px solid #e26d00;
+      color: #e26d00; }
+
+/*# sourceMappingURL=style.css.map */
